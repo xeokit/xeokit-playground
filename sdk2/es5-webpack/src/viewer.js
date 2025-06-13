@@ -1,5 +1,5 @@
 // Import XEokit components from our custom wrapper
-// var xeokit = require('./xeokit-wrapper.js');
+// var xeokit = require('./xeokit-sdk.es5.js');
 var xeokit = require('@xeokit/xeokit-sdk/dist/xeokit-sdk.es5.js');
 
 
@@ -96,7 +96,7 @@ var xeokitCacheBuster = urlParams.get('cacheBuster') ? urlParams.get('cacheBuste
 
 // Main viewer initialization
 document.addEventListener('DOMContentLoaded', function() {
-    var viewer = new Viewer({
+    var viewer = new xeokit.Viewer({
         canvasId: "myCanvas",
         transparent: xeokitTransparent,
         dtxEnabled: xeokitDtxEnabled,

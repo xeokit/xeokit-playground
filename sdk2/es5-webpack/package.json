@@ -9,7 +9,7 @@
     "start": "webpack serve --open"
   },
   "dependencies": {
-    "@xeokit/xeokit-sdk": "^2.6.77-rc7"
+    "@xeokit/xeokit-sdk": "2.6.78-rc1"
   },
   "devDependencies": {
     "@babel/core": "^7.23.2",
